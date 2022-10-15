@@ -6,7 +6,7 @@ import {
 } from '../../utils/tailwindClasses';
 
 const styles = {
-    column: `custom-columns mx-auto grid grid-cols-1 [&+.custom-columns]:mt-8`,
+    column: `custom-column mx-auto grid grid-cols-1 [&+.custom-columns]:mt-8`,
 };
 
 interface ColumnProps {
