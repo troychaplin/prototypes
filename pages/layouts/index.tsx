@@ -1,9 +1,10 @@
 import type { NextPage } from 'next';
 import { DocHead } from '../../components/Head/Head';
 import Column from '../../layouts/Column/Column';
+import Container from '../../layouts/Container/Container';
 
 const styles = {
-    example: `p-4 bg-gray-200`,
+    example: `p-4 bg-gray-300`,
 };
 
 const Home: NextPage = () => {
@@ -11,35 +12,67 @@ const Home: NextPage = () => {
         <>
             <DocHead title="Layouts: Columns" />
 
-            <Column cols="2" maxWidth="3xl">
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-            </Column>
+            <Container>
+                <Column cols="2" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+                <Column cols="3" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example} col-span-2`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example} row-span-2`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+            </Container>
 
-            <Column cols="2" maxWidth="5xl">
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-            </Column>
+            <Container>
+                <Column cols="1/3" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+                <Column cols="2" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+                <Column cols="2/3" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+            </Container>
 
-            <Column cols="3" maxWidth="5xl">
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-            </Column>
+            <Container bgColor="gray">
+                <Column cols="2" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+                <Column cols="3" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example} col-span-2`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example} row-span-2`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+            </Container>
 
-            <Column cols="3" maxWidth="5xl">
-                <p className={`${styles.example} col-span-2`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example} row-span-3`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-                <p className={`${styles.example}`}>Layouts</p>
-            </Column>
+            <Container bgColor="gray">
+                <Column cols="1/3" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+                <Column cols="2" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+                <Column cols="2/3" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+            </Container>
         </>
     );
 };

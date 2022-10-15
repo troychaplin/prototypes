@@ -33,7 +33,7 @@ export const GridSpacing = {
 
 export const ColorScheme = {
     white: 'bg-white',
-    gray: 'bg-cu-black-50',
+    gray: 'bg-gray-100',
 };
 
 export const FontSizes = {
