@@ -22,13 +22,13 @@ export const ColSpan = {
 };
 
 export const GridSpacing = {
-    '0': 'gap-0 mt-0', // none
-    '0.5': 'gap-0.5 mt-0.5', // 2px
-    '1': 'gap-1 mt-1', // 4px
-    '2': 'gap-2 mt-2', // 8px
-    '4': 'gap-4 mt-4', // 16px
-    '8': 'gap-8 mt-8', // 32px
-    '10': 'gap-10 mt-10', // 40px
+    '0': 'gap-0', // none
+    '0.5': 'gap-0.5 [&+.custom-columns]:mt-0.5', // 2px
+    '1': 'gap-1 [&+.custom-columns]:mt-1', // 4px
+    '2': 'gap-2 [&+.custom-columns]:mt-2', // 8px
+    '4': 'gap-4 [&+.custom-columns]:mt-4', // 16px
+    '8': 'gap-8 [&+.custom-columns]:mt-8', // 32px
+    '10': 'gap-10 [&+.custom-columns]:mt-10', // 40px
 };
 
 export const ColorScheme = {

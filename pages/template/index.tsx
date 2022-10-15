@@ -1,5 +1,5 @@
-import type { NextPage } from 'next'
-import { DocHead } from '../../components/Head/Head'
+import type { NextPage } from 'next';
+import { DocHead } from '../../components/Head/Head';
 
 const Home: NextPage = () => {
     return (
@@ -7,7 +7,7 @@ const Home: NextPage = () => {
             <DocHead title="Prototype Template" />
             <p>Prototype Home</p>
         </>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

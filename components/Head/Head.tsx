@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react'
-import Head from 'next/head'
+import React, { ReactNode } from 'react';
+import Head from 'next/head';
 
 export interface DocHeadProps {
-    title?: string
+    title?: string;
 }
 
 export const DocHead = ({ title }: DocHeadProps) => {
@@ -15,5 +15,5 @@ export const DocHead = ({ title }: DocHeadProps) => {
                 content="initial-scale=1.0, width=device-width"
             />
         </Head>
-    )
-}
+    );
+};

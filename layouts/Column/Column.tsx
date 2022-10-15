@@ -6,7 +6,8 @@ import {
 } from '../../utils/tailwindClasses';
 
 const styles = {
-    column: `custom-columns mx-auto grid grid-cols-1 [&+.custom-columns]:mt-8`,
+    // column: `custom-columns mx-auto grid grid-cols-1 [&+.custom-columns]:mt-8`,
+    column: `custom-columns mx-auto grid grid-cols-1`,
 };
 
 interface ColumnProps {
@@ -27,9 +28,13 @@ const Column = ({
 }: ColumnProps) => {
     return (
         <div
-            className={`${styles.column} ${MaxWidth[maxWidth]} ${
-                GridSpacing[gridGap]
-            } ${GridColumns[cols]} ${isNested ? 'mt-8' : 'px-8'}`}
+            className={`
+                ${styles.column}
+                ${MaxWidth[maxWidth]}
+                ${GridSpacing[gridGap]}
+                ${GridColumns[cols]}
+                ${isNested ? `mt-8` : `px-8`}
+            `}
         >
             {children}
         </div>
