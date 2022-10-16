@@ -2,12 +2,12 @@ import React from 'react';
 import {
     MaxWidth,
     GridColumns,
-    // GridSpacing,
+    GridSpacing,
 } from '../../utils/styles/tailwindClasses';
 
 const styles = {
     // column: `custom-columns mx-auto grid grid-cols-1 [&+.custom-columns]:mt-8`,
-    column: `custom-columns mx-auto grid grid-cols-1 gap-8 [&+.custom-columns]:mt-8`,
+    column: `custom-column mx-auto grid grid-cols-1`,
 };
 
 interface ColumnProps {
@@ -21,15 +21,14 @@ interface ColumnProps {
 
 const Column = ({
     children,
-    maxWidth = '7xl',
-    // gridGap = '8',
     // isNested,
+    maxWidth = '7xl',
+    gridGap = '8',
     cols = '1',
 }: ColumnProps) => {
     return (
         <div
-            // className={`${styles.column} ${MaxWidth[maxWidth]} ${GridColumns[cols]} ${GridSpacing[gridGap]}`}
-            className={`${styles.column} ${MaxWidth[maxWidth]} ${GridColumns[cols]}`}
+            className={`${styles.column} ${MaxWidth[maxWidth]} ${GridColumns[cols]} ${GridSpacing[gridGap]}`}
         >
             {children}
         </div>
