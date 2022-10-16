@@ -28,7 +28,8 @@ const Column = ({
 ColumnProps) => {
     return (
         <div
-            className={`${styles.column} ${MaxWidth[maxWidth]} ${GridColumns[cols]} ${GridSpacing[gridGap]}`}
+            // className={`${styles.column} ${MaxWidth[maxWidth]} ${GridColumns[cols]} ${GridSpacing[gridGap]}`}
+            className={`${styles.column} ${MaxWidth[maxWidth]} ${GridColumns[cols]}`}
         >
             {children}
         </div>
