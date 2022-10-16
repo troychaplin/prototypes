@@ -22,10 +22,10 @@ interface ColumnProps {
 const Column = ({
     children,
     maxWidth = '7xl',
-    gridGap = '8',
+    // gridGap = '8',
+    // isNested,
     cols = '1',
-}: // isNested,
-ColumnProps) => {
+}: ColumnProps) => {
     return (
         <div
             // className={`${styles.column} ${MaxWidth[maxWidth]} ${GridColumns[cols]} ${GridSpacing[gridGap]}`}
