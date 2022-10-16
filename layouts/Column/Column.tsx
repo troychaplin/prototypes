@@ -7,7 +7,7 @@ import {
 
 const styles = {
     // column: `custom-columns mx-auto grid grid-cols-1 [&+.custom-columns]:mt-8`,
-    column: `custom-columns mx-auto grid grid-cols-1 gap-8 [&+.custom-columns]:mt-8`,
+    column: `custom-column mx-auto grid grid-cols-1 gap-4 [&+.custom-column]:mt-4`,
 };
 
 interface ColumnProps {
