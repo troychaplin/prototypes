@@ -3,7 +3,7 @@ import {
     MaxWidth,
     GridColumns,
     GridSpacing,
-} from '../../utils/styles/tailwindClasses';
+} from '../../utils/tailwindClasses';
 
 const styles = {
     // column: `custom-columns mx-auto grid grid-cols-1 [&+.custom-columns]:mt-8`,
