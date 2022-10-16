@@ -19,10 +19,16 @@ const Home: NextPage = () => {
                 </Column>
                 <Column cols="3" maxWidth="5xl">
                     <p className={`${styles.example}`}>Layouts</p>
-                    <p className={`${styles.example} col-span-2`}>Layouts</p>
+                    <p className={`${styles.example} md:col-span-2`}>Layouts</p>
                     <p className={`${styles.example}`}>Layouts</p>
                     <p className={`${styles.example}`}>Layouts</p>
-                    <p className={`${styles.example} row-span-2`}>Layouts</p>
+                    <p className={`${styles.example} md:row-span-2`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+                <Column cols="4" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
                     <p className={`${styles.example}`}>Layouts</p>
                     <p className={`${styles.example}`}>Layouts</p>
                 </Column>
@@ -50,10 +56,16 @@ const Home: NextPage = () => {
                 </Column>
                 <Column cols="3" maxWidth="5xl">
                     <p className={`${styles.example}`}>Layouts</p>
-                    <p className={`${styles.example} col-span-2`}>Layouts</p>
+                    <p className={`${styles.example} md:col-span-2`}>Layouts</p>
                     <p className={`${styles.example}`}>Layouts</p>
                     <p className={`${styles.example}`}>Layouts</p>
-                    <p className={`${styles.example} row-span-2`}>Layouts</p>
+                    <p className={`${styles.example} md:row-span-2`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
+                </Column>
+                <Column cols="4" maxWidth="5xl">
+                    <p className={`${styles.example}`}>Layouts</p>
+                    <p className={`${styles.example}`}>Layouts</p>
                     <p className={`${styles.example}`}>Layouts</p>
                     <p className={`${styles.example}`}>Layouts</p>
                 </Column>
