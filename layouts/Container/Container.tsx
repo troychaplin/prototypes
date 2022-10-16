@@ -1,5 +1,5 @@
 import React from 'react';
-import { ColorScheme } from '../../utils/tailwindClasses';
+import { ColorScheme } from '../../utils/styles/tailwindClasses';
 
 const styles = {
     container: `custom-container py-8`,
