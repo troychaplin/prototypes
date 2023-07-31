@@ -1,0 +1,57 @@
+/* Set max width of 5xl on section and container children */
+/* .wmd-section-5xl > :not(.wmd-container),
+.wmd-container-5xl > * {
+  @apply max-w-5xl mx-auto;
+} */
+
+/* Set max width of 7xl on section and container children */
+/* .wmd-section-7xl > :not(.wmd-container),
+.wmd-container-7xl > * {
+  @apply mx-auto max-w-7xl;
+} */
+
+/* Set max width of full on section and container children */
+/* .wmd-section-full > :not(.wmd-container),
+.wmd-container-full > * {
+  @apply max-w-full mx-auto;
+} */
+
+/* Remove spacing on consecutive white containers */
+/* .wmd-container.bg-white + .wmd-container.bg-white {
+  @apply pt-0;
+} */
+
+/* Remove top rounded corners and tightened up spacing on consecutive slate containers */
+/* .wmd-container.bg-slate-100 + .wmd-container.bg-slate-100 {
+  @apply pt-1 -mt-1 rounded-t-none;
+} */
+
+/* Remove margin on first child inside a container */
+/* .wmd-container > :first-child {
+  @apply mt-0;
+} */
+
+/* Remove margin on last child inside a container */
+/* .wmd-container > :last-child {
+  @apply mb-0;
+} */
+
+/* Add spacing between non-container and container in content */
+:not(.wmd-container) + .wmd-container {
+  @apply mt-8 md:mt-10;
+}
+
+/* Add spacing between container and non-container in content */
+.wmd-container + :not(.wmd-container) {
+  @apply mb-8 md:mb-10;
+}
+
+/* Remove top spacing from first child in column */
+.wmd-column > div > :first-child {
+  @apply mt-2;
+}
+
+/* Remove bottom spacing from last child in column */
+.wmd-column > div > :last-child {
+  @apply mb-2;
+}

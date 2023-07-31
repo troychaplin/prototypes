@@ -1,0 +1,34 @@
+/* Set max width of 5xl on section and container children */
+.wmd-section-5xl > :not(.wmd-container),
+.wmd-container-5xl > * {
+  @apply max-w-5xl mx-auto;
+}
+
+/* Set max width of 7xl on section and container children */
+.wmd-section-7xl > :not(.wmd-container),
+.wmd-container-7xl > * {
+  @apply mx-auto max-w-7xl;
+}
+
+/* Remove margin on first child inside a container */
+.wmd-spacing > :first-child {
+  @apply mt-0;
+}
+
+/* Remove margin on last child inside a container */
+.wmd-spacing > :last-child {
+  @apply mb-0;
+}
+
+/* Remove spacing on consecutive white and gray containers */
+.wmd-container.bg-white + .wmd-container.bg-white,
+.wmd-container.bg-gray-100 + .wmd-container.bg-white,
+.wmd-container.bg-white + .wmd-container.bg-gray-100,
+:not(.wmd-container) + .wmd-container.bg-white {
+  @apply mt-8 md:mt-12;
+}
+
+/* Remove top rounded corners and tightened up spacing on consecutive slate containers */
+.wmd-container.bg-gray-100 + .wmd-container.bg-gray-100 {
+  @apply pt-6 -mt-2 rounded-t-none;
+}
